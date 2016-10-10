@@ -99,22 +99,7 @@ public class WebController {
 		return user;
 	}
 
-/*
 
-	Makes a User named James Chee with major Computer Science
-
-*/
-
-@RequestMapping(value = "/cs480/user/{userId}", method = RequestMethod.POST)
-	User JamesUser(
-			@PathVariable("userId") String id) {
-		User user = new User();
-		user.setId(id);
-		user.setMajor("Computer Science");
-		user.setName("James Chee");
-		userManager.updateUser(user);
-		return user;
-	}
 
 	/**
 	 * This API deletes the user. It uses HTTP DELETE method.
