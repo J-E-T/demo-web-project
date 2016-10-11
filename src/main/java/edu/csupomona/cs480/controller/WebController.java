@@ -110,6 +110,18 @@ public class WebController {
     }
 
     /**
+    *
+    * This API prints out a String (James Chee A3 part 3)
+    *
+    */
+    
+    @RequestMapping(value = "/cs480/helloWorld", method = RequestMethod.GET)
+    String helloWorldMethod() {
+        // test with URL: http://localhost:8080/cs480/helloWorld
+        return "Hello World!";
+    }
+    	
+    /**
      * This API deletes the user. It uses HTTP DELETE method.
      *
      * @param userId
