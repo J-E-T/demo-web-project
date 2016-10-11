@@ -120,6 +120,17 @@ public class WebController {
         // test with URL: http://localhost:8080/cs480/helloWorld
         return "Hello World!";
     }
+
+     /**
+     *
+     * This API prints out a String (Timothy Ngo A3 part 3)
+     *
+     */
+    @RequestMapping(value = "/cs480/timothyngo", method = RequestMethod.GET)
+    String eugeneleeMethod() {
+        // test with URL: http://localhost:8080/cs480/timothyngo
+        return "Testing, testing, 123";
+    }
     	
     /**
      * This API deletes the user. It uses HTTP DELETE method.
